@@ -1,3 +1,5 @@
+-- Creates a color sequence that's a slice of another ColorSequence (Very useful for UI things!)
+
 local function tweenKeys(point1: ColorSequenceKeypoint, point2: ColorSequenceKeypoint, position: number): ColorSequenceKeypoint
 	local amount = (position - point1.Time) / (point2.Time - point1.Time)
 	return ColorSequenceKeypoint.new(position, Color3.new(
@@ -11,7 +13,7 @@ local function scaleKey(key: ColorSequenceKeypoint, start: number, length: numbe
 	return ColorSequenceKeypoint.new((key.Time - start) / length, key.Value)
 end
 
--- Creates a color sequence that's a slice of another ColorSequence (Very useful for UI things!)
+-- Start and finish should be between 0 and 1
 return function(start: number, finish: number, sequence: ColorSequence): ColorSequence
 	local points = {}
 	local length = finish - start

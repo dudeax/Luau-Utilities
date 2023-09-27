@@ -1,3 +1,7 @@
+-- Returns a new table that has the values of perferedTable with any missing elements from perferedTable replaced with defaultTable
+--   I.e. it will it will combine the data of both, but anything in perfered data will take priority if there's dupes
+--   Both perferedTable and defaultTable will remain unchanged
+
 local ModulesFolder = script.Parent.Parent
 
 local DeepCopyTable = require(ModulesFolder.General.DeepCopyTable)
@@ -39,9 +43,6 @@ local function combineTableHelper(returnTable : any, perferedTable : {any : any}
 	end
 end
 
--- Returns a new table that has the values of perferedTable with any missing elements from perferedTable replaced with defaultTable
---   I.e. it will it will combine the data of both, but anything in perfered data will take priority if there's dupes
---   Both perferedTable and defaultTable will remain unchanged
 return function(perferedTable : {any : any}, defaultTable : {any : any}) : {any : any}
 	
 	local seen = {} -- Used for storing copied tables

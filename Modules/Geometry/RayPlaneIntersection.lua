@@ -1,3 +1,6 @@
+-- Returns the distance along a given ray that hits a plane
+--   returns math.huge if there is no hit
+
 local EPSILON = 0.0001
 
 return function(origin : Vector3, direction : Vector3, pointOnPlane : Vector3, normal : Vector3) : number

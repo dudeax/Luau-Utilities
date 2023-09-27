@@ -1,3 +1,4 @@
+-- If you need this one, you know what it does. Enjoy not writing it.
 
 --[[
 	Implementation based on:

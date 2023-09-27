@@ -1,3 +1,11 @@
+-- This is a simple class that acts like default Roblox events
+
+-- Example usage:
+-- local MyCoolEvent = Event.new()
+-- local connection = MyCoolEvent:Connect(function(value) print(value) end)
+-- MyCoolEvent:Fire("Any 'Ol Value")
+-- > "Any 'Ol Value"
+
 -- Connection class which handles individual callbacks
 local Connection = {}
 Connection.__index = Connection

@@ -1,3 +1,5 @@
+-- Returns a point inside a rectangular prism Part with a given inset from the edge
+
 return function(part: BasePart, inset : number) : Vector3
 	local x = (part.size.X - inset) * (math.random() - 0.5)
 	local y = (part.size.Y - inset) * (math.random() - 0.5)
