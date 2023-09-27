@@ -5,4 +5,4 @@ The goal of this collections is to provide simple granular easy to understand fu
 
 I've opted to make the utilities understandable rather than perfectly optimized, which I find is almost always the best long term policy.
 
-Feel free to open an issue to any new utility you'd like! (or just write it yourself and open a pull request!)
+Feel free to open an issue to add any new utility you'd like! (or just write it yourself and open a pull request!)
